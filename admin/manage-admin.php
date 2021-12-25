@@ -11,6 +11,30 @@
             echo "<br>{$_SESSION['add']}<br>";  //display session message.
             unset($_SESSION['add']); //removing session add.
         }
+        if (isset($_SESSION['delete'])) {
+            echo "{$_SESSION['delete']}"; //display session message.
+            unset($_SESSION['delete']); //removing session add.
+        }
+
+        if (isset($_SESSION['update'])) {
+            echo "{$_SESSION['update']}"; //display session message.
+            unset($_SESSION['update']); //removing session add.
+        }
+
+        if (isset($_SESSION['user-not-found'])) {
+            echo "{$_SESSION['user-not-found']}"; //display session message.
+            unset($_SESSION['user-not-found']); //removing session add.
+        }
+
+        if (isset($_SESSION['pwd-not-match'])) {
+            echo "{$_SESSION['pwd-not-match']}"; //display session message.
+            unset($_SESSION['pwd-not-match']); //removing session add.
+        }
+
+        if (isset($_SESSION['change-pwd'])) {
+            echo "{$_SESSION['change-pwd']}"; //display session message.
+            unset($_SESSION['change-pwd']); //removing session add.
+        }
         ?>
 
         <br>
@@ -51,8 +75,9 @@
                             <td><?= $full_name ?></td>
                             <td><?= $username ?></td>
                             <td>
-                                <a href="#" class="btn-secondary">Update</a>
-                                <a href="#" class="btn-danger">Delete</a>
+                                <a href="change-password.php?id=<?= $rows['id'] ?>" class="btn-primary">Change password</a>
+                                <a href="update-admin.php?id=<?= $rows['id'] ?>" class="btn-secondary">Update</a>
+                                <a href="delete-admin.php?id=<?= $rows['id'] ?>" class="btn-danger">Delete</a>
                             </td>
                         </tr>
             <?php
@@ -60,8 +85,6 @@
                 }
             }
             ?>
-
-
         </table>
     </div>
 </div>
