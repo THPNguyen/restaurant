@@ -10,6 +10,7 @@
             echo "<br>{$_SESSION['add']}<br>"; //display session message.
             unset($_SESSION['add']); //removing session add.
         }
+        
         ?>
 
         <form action="" method="POST">

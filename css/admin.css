@@ -1,105 +1,144 @@
-*{
-    margin:0px;
+* {
+    margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.wrapper{
+.wrapper {
     padding: 1%;
     width: 80%;
     margin: auto;
 }
-.text-center{
+
+.text-center {
     text-align: center;
 }
+
+
 /* CSS table full */
-.tbl-full{
+
+.tbl-full {
     width: 100%;
 }
-.tbl-30{
+
+.tbl-30 {
     width: 30%;
 }
-table tr th{
+
+table tr th {
     border-bottom: 1px solid black;
     text-align: left;
     padding: 1%;
 }
-table tr td{
+
+table tr td {
     padding: 1%;
 }
-.btn-primary{
-    background-color:  #1e90ff;
-    padding: 1%;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-}
-.btn-primary:hover{
-    background-color:  #3742fa;
-}
-.btn-secondary{
-    background-color:  #7bed9f;
+
+.btn-primary {
+    background-color: #1e90ff;
     padding: 1%;
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
 }
-.btn-secondary:hover{
-    background-color:  #2ed573;
+
+.btn-primary:hover {
+    background-color: #3742fa;
 }
-.btn-danger{
-    background-color:  #ff6b81;
+
+.btn-secondary {
+    background-color: #7bed9f;
     padding: 1%;
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
 }
-.btn-danger:hover{
-    background-color:  #ff4757;
+
+.btn-secondary:hover {
+    background-color: #2ed573;
 }
-/* CSS Menu */
-.menu ul{
-    list-style-type: none;
-}
-.menu ul li{
-    display: inline;
+
+.btn-danger {
+    background-color: #ff6b81;
     padding: 1%;
-}
-.menu ul li a{
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
-   
-    color: #ff6b81;
 }
-.menu ul li a:hover{
+
+.btn-danger:hover {
+    background-color: #ff4757;
+}
+
+.success {
+    color: #2ed573;
+}
+
+.error {
     color: #ff4757;
 }
 
+
+/* CSS Menu */
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu ul li {
+    display: inline;
+    padding: 1%;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ff6b81;
+}
+
+.menu ul li a:hover {
+    color: #ff4757;
+}
+
+
 /* CSS content */
-.content
-{
+
+.content {
     background-color: #f1f2f6;
 }
-.content.wrapper{
+
+.content.wrapper {
     box-sizing: border-box;
 }
-.col-4
-{
+
+.col-4 {
     background-color: #ffffff;
     margin: 1%;
     padding: 2%;
     width: 19%;
     float: left;
 }
-.clearfix
-{
+
+.clearfix {
     float: none;
     clear: both;
 }
 
 
 /* CSS footer  */
-.footer{
+
+.footer {
     background-color: #e55039;
-    color:#ffffff;
+    color: #ffffff;
+}
+
+
+/* CSS login */
+
+.login {
+    border: 1px solid grey;
+    width: 30%;
+    margin: 10% auto;
+    padding: 2%;
 }
