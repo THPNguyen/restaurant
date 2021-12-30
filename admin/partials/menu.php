@@ -1,6 +1,6 @@
 <?php
 include "../config/constants.php";
-
+ob_start();
 //include: user not login 
 include "user-not-login.php";
 ?>
@@ -22,7 +22,7 @@ include "user-not-login.php";
                 <li><a href="index.php">Home</a> </li>
                 <li><a href="manage-admin.php">Admin</a></li>
                 <li><a href="manage-category.php">Categories</a></li>
-                <li><a href="manage-content.php">Foods</a></li>
+                <li><a href="manage-food.php">Foods</a></li>
                 <li><a href="manage-food.php">Contact</a></li>
                 <li><a href="manage-order.php">Order</a></li>
                 <li><a href="logout.php">Logout</a></li>
